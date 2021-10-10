@@ -1,0 +1,250 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin: 10px 0 0 220px;
+}
+
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    overflow: hidden;
+}
+
+.focus ul {
+    /*加定位才能用js，是ul动而不是li动*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.indicator li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #fff;
+}
+
+.newsflash {
+    /*设置右浮动，中间自然就有空隙，不用margin*/
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news-hd {
+    height: 33px;
+    line-height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd a {
+    float: right;
+}
+
+.news-bd {
+    padding: 7px 15px;
+}
+
+.news-bd ul li {
+    height: 24px;
+    /*超出部分省略号显示*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.life-service {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.life-service ul {
+    /*当放不下盒子的时候给父盒子足够宽度，然后溢出的隐藏即可*/
+    width: 252px;
+}
+
+.life-service ul li {
+    float: left;
+    height: 71px;
+    width: 63px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+
+}
+
+.life-service ul li a {
+    display: block;
+    padding-top: 13px;
+}
+
+.life-service ul li a i {
+    /*转化为行内块，然后ta:c居中也可以*/
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin: 0 auto;
+}
+
+.life-service ul li a span {
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.life-service .huafei {
+    background: url("../images/icons.png") no-repeat -17px -15px;
+}
+
+.life-service .jipiao {
+    background: url("../images/icons.png") no-repeat -78px -15px;
+}
+
+.life-service .dianying {
+    background: url("../images/icons.png") no-repeat -140px -15px;
+}
+
+.life-service .youxi {
+    background: url("../images/icons.png") no-repeat -204px -15px;
+}
+
+.bargain {
+    margin-top: 6px;
+}
+
+.recom {
+    height: 163px;
+    margin-top: 12px;
+    background-color: #ebebeb;
+}
+
+.recom-hd {
+    display: flex;
+    float: left;
+    width: 206px;
+    height: 163px;
+    background-color: #5c5251;
+}
+
+.recom-hd img {
+    margin: auto;
+}
+
+.recom-bd {
+    float: left;
+}
+
+.recom-bd ul li {
+    float: left;
+    position: relative;
+}
+
+/*防止上传的图片大小超过盒子*/
+.recom-bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+/*从第三个倒数的盒子加伪元素*/
+.recom-bd ul li:nth-child(-n+3)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 145px;
+    background-color: #dddddd;
+}
+
+.floor .w {
+    margin-top: 30px;
+}
+
+.box-hd {
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 18px;
+}
+
+.box-hd .tab-list {
+    float: right;
+}
+
+.box-hd .tab-list ul li {
+    float: left;
+}
+
+.box-hd .tab-list ul li:nth-child(2n) {
+    margin: 10px 10px 0;
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+}
+
+.box-bd {
+    height: 361px;
+}
+
+.tab-list-item > div {
+    float: left;
+    height: 361px;
+}

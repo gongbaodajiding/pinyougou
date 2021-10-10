@@ -1,0 +1,85 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c81623;
+}
+
+header img {
+    margin-top: 20px;
+}
+
+.registerarea {
+    height: 522px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+}
+
+.registerarea h3 {
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    background-color: #ececec;
+    border-bottom: 1px solid #dddddd;
+    padding: 0 10px;
+}
+
+.registerarea h3 span {
+    float: right;
+    font-size: 14px;
+}
+
+.registerarea span a {
+    color: #c81623;
+}
+
+.reg-form {
+    width: 500px;
+    margin: 70px auto 0;
+}
+
+.reg-form form ul li {
+    margin: 20px 0;
+}
+
+.reg-form form ul li label {
+    /*转化为行内块，给一个宽度，这样文字就可以右对齐了*/
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+
+.reg-form form ul li .inp {
+    width: 242px;
+    height: 30px;
+    border: 1px solid #cccccc;
+}
+
+.reg-form form ul .agree {
+    margin-left: 100px;
+}
+
+.agree input {
+    vertical-align: middle;
+}
+
+.agree a {
+    color: #58baed;
+}
+
+.reg-form ul li .btn {
+    width: 200px;
+    height: 34px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #c81623;
+    margin-left: 100px;
+}
+
+/*指到按钮时鼠标变成小手*/
+.reg-form ul li .btn:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,118 @@
+.second-kill {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81623;
+    padding: 3px 0 3px 15px;
+}
+.sk-list {
+    float: left;
+    line-height: 47px;
+}
+.sk-list ul li {
+    float: left;
+}
+/*这样不用指到文字上就可以点击链接*/
+.sk-list ul li a {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 30px;
+    color: #000000;
+}
+/*上边的权重大被覆盖了，再写一个*/
+.sk-list ul li a:hover {
+    color: #c81623
+}
+.sk-content {
+    float: right;
+    line-height: 47px;
+}
+.sk-content ul li {
+    float: left;
+}
+.sk-content ul li a {
+    display: block;
+    font-size: 14px;
+    padding: 0 20px;
+}
+.sk-goods-bd ul li {
+    float: left;
+    position: relative;
+    width: 290px;
+    height: 460px;
+    /*先加一个透明边框，防止影响其他布局*/
+    border: 1px solid transparent;
+    padding: 12px;
+    margin-right: 10px;
+}
+.sk-goods-bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+.sk-goods-bd ul li:hover {
+    border: 1px solid #c81623;
+}
+.sk-goods-bd ul li a {
+    display: block;
+    overflow: hidden;
+}
+.sk-goods-bd ul li a img {
+    width: auto;
+    height: 290px;
+}
+.sk-goods-info {
+    position: relative;
+    height: 30px;
+    margin-top: 5px;
+}
+.sk-goods-info>span {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.sk-goods-info del {
+    position: absolute;
+    top: 11px;
+    font-size: 14px;
+}
+.progress {
+    height: 30px;
+}
+.progressbar {
+    float: left;
+    position: relative;
+    width: 130px;
+    height: 10px;
+    background-color: #e6e6e6;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+.complete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 10px;
+    background-color: #c81623;
+    border-radius: 10px 0 0 10px;
+}
+.progress span {
+    float: left;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.sk-botton {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.sk-botton a {
+    display: block;
+    width: 288px;
+    height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #c81623;
+    line-height: 50px;
+    text-align: center;
+}
