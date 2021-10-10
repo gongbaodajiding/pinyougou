@@ -1,5 +1,5 @@
 function animate(obj, target, callback) {
-    
+
     clearInterval(obj.timer); // 先清除之前的定时器，只保留一个，否则会叠加
     obj.timer = setInterval(easeOut, 15);
 
@@ -12,6 +12,7 @@ function animate(obj, target, callback) {
             // if (callback) {
             //     callback();
             // }
+            // 等价短路运算符
             callback && callback();
         }
         obj.style.left = obj.offsetLeft + step + 'px';
