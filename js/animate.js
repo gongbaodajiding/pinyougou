@@ -1,7 +1,7 @@
-function animate(obj, target, callback) {
+function animate(obj, target, timeout = 15, callback) {
 
     clearInterval(obj.timer); // 先清除之前的定时器，只保留一个，否则会叠加
-    obj.timer = setInterval(easeOut, 15);
+    obj.timer = setInterval(easeOut, timeout);
 
     function easeOut() {
         let step = (target - obj.offsetLeft) / 10; // 缓动动画算法
